@@ -1,6 +1,6 @@
 
-# spogwizd_jporeba_cantabo_manager_frontend
-## System zarządzania pieśniami - Cantabo Manager - Frontend <br>
+# mailzen_frontend - aplikacja frontendowa
+## System zarządzania zgłoszeniami mailowymi - Mail Zen - Frontend <br>
 
 <b>To repozytorium zewiera jedynie kod frontendu.</b><br>
 
@@ -16,8 +16,7 @@
 
 - Szczegółowa dokumentacja uruchomienia aplikacji: https://github.com/szymonpogwizd/spogwizd_jporeba_cantabo_manager_frontend/blob/main/LaunchDocumentation.pdf <br>
 
-### Autorzy: 
-- Szymon Pogwizd szymonpogwizd12@gmail.com
+### Autor: 
 - Jakub Poręba jakubporeba8@gmail.com
 
 
