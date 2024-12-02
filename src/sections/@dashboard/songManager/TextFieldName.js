@@ -6,7 +6,7 @@ export default function TextFieldName({ onChange, value }) {
   return (
       <TextField
         id="outlined-basic"
-        label="Nazwa pieśni"
+        label="Tytuł zgłoszenia"
         variant="outlined"
         fullWidth
         onChange={onChange}

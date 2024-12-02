@@ -46,7 +46,7 @@ export default function LoginPage() {
   return (
     <>
       <Helmet>
-        <title> Logowanie | Cantabo Manager </title>
+        <title> Logowanie | MailZen</title>
       </Helmet>
 
       <StyledRoot>

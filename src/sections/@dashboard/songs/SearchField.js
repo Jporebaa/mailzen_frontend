@@ -13,7 +13,7 @@ const SearchField = ({ handleSearch }) => {
 
   return (
     <TextField
-      label="Szukaj pieśni"
+      label="Szukaj zgłoszenia"
       fullWidth
       value={searchText}
       onChange={handleChange}

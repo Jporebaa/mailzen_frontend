@@ -16,7 +16,7 @@ export default function Ustawienia() {
 return (
     <>
       <Helmet>
-        <title> Ustawienia | Cantabo Manager </title>
+        <title> Ustawienia | MailZen </title>
       </Helmet>
 
       <Container maxWidth="xl">

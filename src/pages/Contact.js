@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Kontakt | Cantabo Manager</title>
+        <title>Kontakt | MailZen</title>
       </Helmet>
 
       <Container maxWidth="xl">

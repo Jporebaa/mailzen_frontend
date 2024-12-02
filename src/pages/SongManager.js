@@ -111,7 +111,7 @@ export default function SongManager() {
           });
         }
         handleCloseAlert();
-        setSuccessAlertMessage(`Pomyślnie utworzono pieśń ${nameValue}`);
+        setSuccessAlertMessage(`Pomyślnie utworzono zgłsozenie ${nameValue}`);
         setShowSuccessAlert(true);
         resetEditor();
         resetForm();
@@ -157,7 +157,7 @@ export default function SongManager() {
                   throw new Error(errorText);
                 });
               }
-              setSuccessAlertMessage(`Pomyślnie zaktualizowano pieśń ${nameValue}`);
+              setSuccessAlertMessage(`Pomyślnie zaktualizowano zgłoszenie ${nameValue}`);
               handleCloseAlert();
               setShowSuccessAlert(true);
               resetForm();
@@ -223,7 +223,7 @@ const handleAddClick = () => {
   return (
     <>
       <Helmet>
-        <title> Zarządzanie pieśniami | Cantabo Manager </title>
+        <title> Zarządzanie zgłoszeniem | MailZen </title>
       </Helmet>
 
       {showAlert && (
@@ -248,7 +248,7 @@ const handleAddClick = () => {
 
       <Container maxWidth="xl">
         <Typography variant="h4" sx={{ mb: 5 }}>
-          Zarządzanie pieśniami
+          Zarządzanie zgłoszeniami
         </Typography>
 
         <Grid container spacing={10}>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { faker } from '@faker-js/faker';
 // @mui
 import { useTheme } from '@mui/material/styles';
 import { Grid, Container, Typography } from '@mui/material';
@@ -15,10 +14,10 @@ import {
 
 export default function DashboardAppPage() {
     const theme = useTheme();
-    const [numSongs, setNumSongs] = useState(0);
-    const [numPlaylists, setNumPlaylists] = useState(0);
-    const [numGroups, setNumGroups] = useState(0);
+    const [numTickets, setNumTickets] = useState(0);
     const [numUsers, setNumUsers] = useState(0);
+    const [numCategories, setNumCategories] = useState(0);
+    const [numCompanies, setNumCompanies] = useState(0);
 
     const headers = {
         Authorization: `Bearer ${localStorage.getItem('token')}`
@@ -31,27 +30,27 @@ export default function DashboardAppPage() {
     }, []);
 
     useEffect(() => {
-        fetch("http://localhost:8080/dashboard/app/songs", { headers })
+        fetch("http://localhost:8080/dashboard/app/tickets", { headers })
             .then((response) => response.json())
-            .then((data) => setNumSongs(data || "0"));
+            .then((data) => setNumTickets(data || "0"));
     }, []);
 
     useEffect(() => {
-        fetch("http://localhost:8080/dashboard/app/playlists", { headers })
+        fetch("http://localhost:8080/dashboard/app/categories", { headers })
             .then((response) => response.json())
-            .then((data) => setNumPlaylists(data || "0"));
+            .then((data) => setNumCategories(data || "0"));
     }, []);
 
     useEffect(() => {
-        fetch("http://localhost:8080/dashboard/app/groups", { headers })
+        fetch("http://localhost:8080/dashboard/app/companies", { headers })
             .then((response) => response.json())
-            .then((data) => setNumGroups(data || "0"));
+            .then((data) => setNumCompanies(data || "0"));
     }, []);
 
   return (
     <>
       <Helmet>
-        <title> Strona główna | Cantabo Manager </title>
+        <title> Strona główna | MailZen </title>
       </Helmet>
 
       <Container maxWidth="xl">
@@ -61,19 +60,19 @@ export default function DashboardAppPage() {
 
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
-              <AppWidgetSummary title="Pieśni" total={numSongs} icon={'ant-design:play-circle-outlined'} />
+              <AppWidgetSummary title="Zgłoszenia" total={numTickets} icon={'ant-design:mail-outlined'} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Playlisty" total={numPlaylists} color="info" icon={'ant-design:play-square-outlined'} />
+            <AppWidgetSummary title="Użytkownicy" total={numUsers} color="info" icon={'ant-design:user-outlined'} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Użytkownicy" total={numUsers} color="warning" icon={'ant-design:user-outlined'} />
+            <AppWidgetSummary title="Kategorie" total={numCategories} color="warning" icon={'ant-design:tags-outlined'} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Grupy" total={numGroups} color="error" icon={'ant-design:group-outlined'} />
+            <AppWidgetSummary title="Firmy" total={numCompanies} color="error" icon={'ant-design:team-outlined'} />
           </Grid>
         </Grid>
       </Container>

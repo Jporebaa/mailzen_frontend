@@ -22,12 +22,12 @@ export default function Songs() {
   return (
     <>
       <Helmet>
-        <title> Pieśni | Cantabo Manager </title>
+        <title> Zgłoszenia | MailZen </title>
       </Helmet>
 
       <Container maxWidth="xl">
         <Typography variant="h4" sx={{ mb: 5 }}>
-          Pieśni
+          Zgłoszenia
         </Typography>
 
         <SongList />

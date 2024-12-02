@@ -21,21 +21,7 @@ export default function ContactEmails() {
       </Typography>
 
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6}>
-          <Typography variant="subtitle1" gutterBottom>
-            Szymon:
-          </Typography>
-          <Typography variant="body1">szymonpogwizd12@gmail.com</Typography>
-          <Stack direction="row" spacing={2}>
-            <Button
-              variant="contained"
-              endIcon={<SendIcon />}
-              onClick={() => handleOpenMailAppSzymon("szymon@gmail.com")}
-            >
-              Otwórz aplikację poczty
-            </Button>
-          </Stack>
-        </Grid>
+
 
         <Grid item xs={12} sm={6}>
           <Typography variant="subtitle1" gutterBottom>

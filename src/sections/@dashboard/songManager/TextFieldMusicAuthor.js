@@ -6,7 +6,7 @@ export default function TextFieldName({ onChange, value }) {
   return (
       <TextField
         id="outlined-basic"
-        label="Autor muzyki"
+        label="Adres e-mail zgłaszającego"
         variant="outlined"
         fullWidth sx={{ marginBottom: 2 }}
         onChange={onChange}

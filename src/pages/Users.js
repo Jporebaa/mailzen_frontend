@@ -173,7 +173,7 @@ export default function Users() {
   return (
     <>
       <Helmet>
-        <title> Użytkownicy | Cantabo Manager </title>
+        <title> Użytkownicy | MailZen </title>
       </Helmet>
 
         {showAlert && (
